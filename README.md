@@ -1,3 +1,5 @@
+# Note: When I have more time in the future, I'd like to add additional functionalities to this app.
+
 # Artistry
 Today, you have been tasked with building out a Rails application for a music studio!
 
