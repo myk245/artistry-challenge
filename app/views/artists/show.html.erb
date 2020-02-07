@@ -1,0 +1,23 @@
+<h1><strong><%= @artist.name  %></strong></h1>
+Age: <%= @artist.age %>
+<br>
+<br>
+Title: <%= @artist.title %>
+<br>
+<br>
+Instruments Played: <% @artist.instruments.each do |instrument| %>
+    <li><%= instrument.name %></li>
+<%end%>
+<br>
+<br>
+Songs: <% @artist.songs.each do |song| %>
+    <li><%= song.name %></li>
+<%end%>
+<br>
+<br>
+<%= button_to "Edit Artist Info", edit_artist_path(@artist), method: "get" %>
+<br>
+<br>
+<%= button_to "Delete Artist", artist_path(@artist), method: "delete", data: {confirm: "Are you sure?"} %>
+
+
